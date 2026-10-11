@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{87F14CE1-6384-405F-94E9-E48132B4D392}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetHunter.App", "src\NetHunter.App\NetHunter.App.csproj", "{188353F4-0FD3-4769-9B8C-226FA5DF9C36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetHunter.Cli", "src\NetHunter.Cli\NetHunter.Cli.csproj", "{9D27E868-C87E-4288-A48C-5C91BB0D0532}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetHunter.Core", "src\NetHunter.Core\NetHunter.Core.csproj", "{DBE1FF62-0753-4A11-830A-2B94753B570E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetHunter.Windows", "src\NetHunter.Windows\NetHunter.Windows.csproj", "{2F9A194F-0CD9-46B7-A3EF-6B7E84E92275}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B312048A-1D0D-4241-B9B0-68B458ADEF59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetHunter.Core.Tests", "tests\NetHunter.Core.Tests\NetHunter.Core.Tests.csproj", "{FA27752A-D306-41FD-86CF-5C8C7C076E46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetHunter.Windows.Tests", "tests\NetHunter.Windows.Tests\NetHunter.Windows.Tests.csproj", "{A6623998-AF3E-4965-916C-F96B9FB9F038}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{188353F4-0FD3-4769-9B8C-226FA5DF9C36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{188353F4-0FD3-4769-9B8C-226FA5DF9C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{188353F4-0FD3-4769-9B8C-226FA5DF9C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{188353F4-0FD3-4769-9B8C-226FA5DF9C36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D27E868-C87E-4288-A48C-5C91BB0D0532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D27E868-C87E-4288-A48C-5C91BB0D0532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D27E868-C87E-4288-A48C-5C91BB0D0532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D27E868-C87E-4288-A48C-5C91BB0D0532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBE1FF62-0753-4A11-830A-2B94753B570E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE1FF62-0753-4A11-830A-2B94753B570E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE1FF62-0753-4A11-830A-2B94753B570E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE1FF62-0753-4A11-830A-2B94753B570E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F9A194F-0CD9-46B7-A3EF-6B7E84E92275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F9A194F-0CD9-46B7-A3EF-6B7E84E92275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F9A194F-0CD9-46B7-A3EF-6B7E84E92275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F9A194F-0CD9-46B7-A3EF-6B7E84E92275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA27752A-D306-41FD-86CF-5C8C7C076E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA27752A-D306-41FD-86CF-5C8C7C076E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA27752A-D306-41FD-86CF-5C8C7C076E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA27752A-D306-41FD-86CF-5C8C7C076E46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6623998-AF3E-4965-916C-F96B9FB9F038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6623998-AF3E-4965-916C-F96B9FB9F038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6623998-AF3E-4965-916C-F96B9FB9F038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6623998-AF3E-4965-916C-F96B9FB9F038}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{188353F4-0FD3-4769-9B8C-226FA5DF9C36} = {87F14CE1-6384-405F-94E9-E48132B4D392}
+		{9D27E868-C87E-4288-A48C-5C91BB0D0532} = {87F14CE1-6384-405F-94E9-E48132B4D392}
+		{DBE1FF62-0753-4A11-830A-2B94753B570E} = {87F14CE1-6384-405F-94E9-E48132B4D392}
+		{2F9A194F-0CD9-46B7-A3EF-6B7E84E92275} = {87F14CE1-6384-405F-94E9-E48132B4D392}
+		{FA27752A-D306-41FD-86CF-5C8C7C076E46} = {B312048A-1D0D-4241-B9B0-68B458ADEF59}
+		{A6623998-AF3E-4965-916C-F96B9FB9F038} = {B312048A-1D0D-4241-B9B0-68B458ADEF59}
+	EndGlobalSection
+EndGlobal

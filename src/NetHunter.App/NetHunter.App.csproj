@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <!-- Only for the notification-area icon / balloon alerts. -->
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>NetHunter.App</RootNamespace>
+    <AssemblyName>NetHunterMonitor</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\NetHunter.ico</ApplicationIcon>
+    <NoWarn>$(NoWarn);WFAC010</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Using Remove="System.Windows.Forms" />
+    <Using Remove="System.Drawing" />
+    <Using Include="System.IO" />
+    <Resource Include="Assets\NetHunter.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetHunter.Core\NetHunter.Core.csproj" />
+    <ProjectReference Include="..\NetHunter.Windows\NetHunter.Windows.csproj" />
+  </ItemGroup>
+</Project>

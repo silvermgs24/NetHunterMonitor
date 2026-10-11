@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Headless companion: snapshot, watch, pcap analysis, synthetic detection test. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>NetHunter.Cli</RootNamespace>
+    <AssemblyName>nethunter</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetHunter.Core\NetHunter.Core.csproj" />
+    <ProjectReference Include="..\NetHunter.Windows\NetHunter.Windows.csproj" />
+  </ItemGroup>
+</Project>

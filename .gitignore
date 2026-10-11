@@ -1,0 +1,14 @@
+bin/
+obj/
+publish/
+dist/
+*.user
+.vs/
+TestResults/
+# runtime data created next to the exe
+config/
+database/
+logs/
+*.db
+*.db-shm
+*.db-wal

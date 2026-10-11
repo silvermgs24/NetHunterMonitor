@@ -1,0 +1,11 @@
+# Example local IOC list for NetHunter Monitor.
+# One indicator per line; type is detected automatically. '#' starts a comment.
+# Accepted: IPv4/IPv6, CIDR ranges, domains (subdomains match too), SHA-256 hashes, http(s) URLs.
+# Defanged values (hxxp://, [.]) are accepted. An optional comment may follow a space, comma or tab.
+#
+# These entries match the SYNTHETIC sample capture only (documentation addresses / .example domains).
+203.0.113.66            # synthetic C2 server (failed connections on 4444)
+exfil-data[.]example    # synthetic DNS tunnelling domain
+198.51.100.0/24,synthetic range example
+hxxp://panel[.]example/gate.php
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 empty-file hash example
