@@ -41,6 +41,8 @@ public sealed class TimelinePage : PageBase
             .Text("", "Marker", 24)
             .Text("Activity", "Flow", 0)
             .Text("Endpoint", "Endpoint", 230, mono: true)
+            .Rep("VirusTotal", RepColumn.VirusTotalDestination)
+            .Rep("AbuseIPDB", RepColumn.AbuseIpDb)
             .Risk();
         grid.SelectionChanged += (_, _) =>
         {

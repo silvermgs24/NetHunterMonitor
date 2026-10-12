@@ -27,6 +27,8 @@ public sealed class AlertsPage : PageBase
             .Text("Detection", "Title", 240)
             .Text("Process", "ProcessName", 140)
             .Text("Destination", "Destination", 170, mono: true)
+            .Rep("VirusTotal", RepColumn.VirusTotalDestination)
+            .Rep("AbuseIPDB", RepColumn.AbuseIpDb)
             .Text("Score", "Score", 50)
             .Text("Confidence", "Confidence", 80)
             .Text("Status", "Status", 100);

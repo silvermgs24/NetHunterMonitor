@@ -21,7 +21,7 @@ public sealed class SearchPage : PageBase
     {
         var flows = Grids.Create(_flows)
             .Text("Process", "ProcessName", 150).Text("Remote IP", "RemoteIp", 160, mono: true).Text("Hostname", "Hostname", 200, fallback: "Unknown")
-            .Text("Port", "RemotePort", 55).Text("Count", "Count", 60).Risk().Text("Last seen", "LastSeen", 130, Grids.Conv("DateTime"));
+            .Text("Port", "RemotePort", 55).Text("Count", "Count", 60).Rep("VirusTotal", RepColumn.VirusTotalDestination, "Flow").Rep("AbuseIPDB", RepColumn.AbuseIpDb, "Flow").Risk().Text("Last seen", "LastSeen", 130, Grids.Conv("DateTime"));
         flows.MouseDoubleClick += (_, _) => { if (flows.SelectedItem is FlowRow r) Ctx.Navigate("Connections", r.Key); };
         var events = Grids.Create(_events)
             .Text("Time", "Timestamp", 130, Grids.Conv("DateTime")).Text("Dir", "Direction", 62, Grids.Conv("Dir")).Text("Process", "ProcessName", 140)

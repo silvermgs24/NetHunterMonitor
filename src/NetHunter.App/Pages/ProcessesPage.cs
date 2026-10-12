@@ -41,6 +41,7 @@ public sealed class ProcessesPage : PageBase
             .Text("Destinations", "Destinations", 95)
             .Risk()
             .Text("Score", "Score", 50)
+            .Rep("VT (file)", RepColumn.VirusTotalFile)
             .Text("Signature", "Signature", 200)
             .Text("Path", "Path", 0, fallback: "Unknown");
         _grid.SelectionChanged += (_, _) => ShowDetail();

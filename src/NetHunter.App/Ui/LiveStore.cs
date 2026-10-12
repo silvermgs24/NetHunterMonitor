@@ -137,7 +137,7 @@ public sealed class LiveStore
             for (int i = 0; i < Math.Min(Live.Count, 300); i++)
             {
                 var e = Live[i];
-                if (byKey.TryGetValue(e.FlowKey, out var f) && (e.Level != f.Assessment.Level || e.Hostname != f.Hostname))
+                if (byKey.TryGetValue(e.FlowKey, out var f)) // any flow change (score, hostname, reputation) refreshes its rows
                 {
                     // Rows bind to plain objects, so replace with an updated copy to make the grid re-render it.
                     var copy = e.Clone();

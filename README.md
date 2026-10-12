@@ -14,6 +14,7 @@ LOLBins, masquerading…) and **explains every alert**.
 * **Beacon detection** with jitter and missed-beat tolerance ("Possible C2 beacon, interval ≈ 60 s, confidence 87 %").
 * **Threat intelligence**: your own IOC lists (offline, checked first), AbuseIPDB and VirusTotal (hash lookups only by
   default), with rate limiting, priority queues and persistent caching. Works fully offline without them.
+* **VirusTotal and AbuseIPDB columns** in the Dashboard, Connections, Processes, IOC, Alerts and Timeline grids: detections (e.g. `8/95`) and abuse confidence (e.g. `92% · 34` reports) at a glance, colour-coded, with details on hover.
 * **Portable**: one self-contained `NetHunterMonitor.exe` (no installer, no .NET runtime, no driver). Data stays next
   to the exe; delete the folder to remove it.
 * **Least privilege**: runs as a standard user and says exactly what administrator rights would add.
@@ -98,7 +99,7 @@ Uploading a file to VirusTotal is a separate, confirmed action with a privacy wa
 * Without administrator rights, connections that open and close between two polls are only visible as TIME_WAIT
   remnants without a process, and UDP remote peers are not visible.
 * DNS-cache based hostnames have no process attribution and can miss names with very short TTLs.
-* The ETW (administrator) path and Windows 10 were not exercised on the build machine; see
+* ETW TCP events (administrator mode) are still being verified; ETW DNS and UDP are verified. Windows 10 was not tested; see
   [docs/TESTING.md](docs/TESTING.md#verification-status).
 * Reverse DNS (PTR) is shown as information only; it does not prove who operates an address.
 

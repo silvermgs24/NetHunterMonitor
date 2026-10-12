@@ -55,6 +55,7 @@ never sent to reputation providers.
 | Synthetic test mode end-to-end in the desktop UI | ✅ verified |
 | PCAP import end-to-end (CLI and UI) with the synthetic sample | ✅ verified |
 | Portable self-contained single-file publish, first run from an empty folder | ✅ verified |
-| **Elevated mode (ETW kernel TCP/IP and DNS-Client real-time tracing)** | ⚠ implemented with the official TraceEvent library, but **not executed** on the development VM (no interactive UAC approval available during the build). If ETW cannot start, the app logs the reason and continues with polling. |
+| Elevated mode: ETW DNS-Client and ETW UDP | ✅ verified 2026-10-12 on Windows 11 22H2 run as administrator: 238 DNS queries and 52 UDP peers captured, all with the requesting process |
+| Elevated mode: ETW TCP connect/accept | ⚠ the session starts, but in the first verification run every TCP connection was recorded by the polling collector, none by ETW. Still to be investigated (polling may simply win the race, or kernel TCP events may not be delivered). TCP monitoring itself is unaffected. |
 | **Windows 10** | ⚠ not tested on a Windows 10 machine; only APIs available since Windows 8 are used (`MSFT_DNSClientCache` WMI class, `CryptCATAdminAcquireContext2`, IP Helper, ETW). |
 | Live AbuseIPDB / VirusTotal queries | ⚠ parsing and HTTP behaviour are tested against recorded-format responses; no API keys were available, so no live query was made. |

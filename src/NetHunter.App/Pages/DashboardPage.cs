@@ -42,6 +42,8 @@ public sealed class DashboardPage : PageBase
             .Text("Hostname", "Hostname", 0, fallback: "Unknown")
             .Text("Port", "RemotePort", 56)
             .Text("Proto", "Protocol", 52, Grids.Conv("Upper"))
+            .Rep("VirusTotal", RepColumn.VirusTotalDestination)
+            .Rep("AbuseIPDB", RepColumn.AbuseIpDb)
             .Risk();
         live.SelectionChanged += (_, _) =>
         {

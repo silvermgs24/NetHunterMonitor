@@ -41,6 +41,7 @@ public sealed class MainWindow : Window
         FontSize = 13;
         try { Icon = BitmapFrame.Create(new Uri("pack://application:,,,/Assets/NetHunter.ico")); } catch (Exception) { /* icon is cosmetic */ }
 
+        ReputationColumns.Host = host;
         _store = new LiveStore(host, Dispatcher);
         _ctx = new UiContext { Host = host, Store = _store, Navigate = Navigate };
         _factories = new()

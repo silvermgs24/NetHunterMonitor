@@ -42,7 +42,9 @@ public sealed class IocPage : PageBase
             .Text("First seen", "FirstSeen", 130, Grids.Conv("DateTime"))
             .Text("Last seen", "LastSeen", 130, Grids.Conv("DateTime"))
             .Text("Processes", "Processes", 170)
-            .Text("Reputation", "Reputation", 260)
+            .Rep("VirusTotal", RepColumn.VirusTotalDestination)
+            .Rep("AbuseIPDB", RepColumn.AbuseIpDb)
+            .Text("All reputation", "Reputation", 260)
             .Risk();
         _grid.SelectionChanged += (_, _) => ShowDetail();
 
